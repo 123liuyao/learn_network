@@ -2,7 +2,7 @@ import d2l.torch as d2l
 import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
-from model.googlenet import googlenet
+from model.resnet import ResNet
 
 def evaluate_gpu(net, data_iter, device):
     net.to(device)
@@ -59,9 +59,8 @@ def train_google(net, train_iter, test_iter, lr, num_epochs, device):
 
 if __name__ == '__main__':
     train_iter, test_iter = d2l.load_data_fashion_mnist(128,resize=96)
-    net = googlenet(1, 10)
     if torch.cuda.is_available():
         device = 'cuda'
     else: device = 'cpu'
-    train_google(net, train_iter, test_iter, 0.1, 10, device)
+    train_google(ResNet, train_iter, test_iter, 0.1, 10, device)
     plt.show()
