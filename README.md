@@ -15,3 +15,7 @@ learn_network/
 │   └── lenet.py
 ├── agent/          # langchain库学习相关代码
 └── README.md
+
+## 📽️ 演示视频
+
+<video src="demo/single_camera.mp4" controls width="100%"></video>
