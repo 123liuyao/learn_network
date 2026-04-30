@@ -18,4 +18,4 @@ learn_network/
 
 ## 📽️ 演示视频
 
-<video src="demo/single_camera.mp4" controls width="100%"></video>
+<video src="raspberry_camera_yolo/single_camera.mp4" controls width="100%"></video>
